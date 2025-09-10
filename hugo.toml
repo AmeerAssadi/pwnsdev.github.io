@@ -1,0 +1,41 @@
+baseURL = "https://pwns.dev/"
+languageCode = "en-us"
+title = "pwns.dev — nothing but vulns"
+theme = "PaperMod"
+
+[params]
+  description = "nothing but vulns — security research & exploit write-ups by Ameer Assadi."
+  author = "Ameer Assadi"
+  defaultTheme = "light"
+  ShowReadingTime = false
+  ShowBreadCrumbs = false
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowToc = true
+  comments = false
+  hideFooter = true
+  hideCredits = true
+  hideCopyright = true
+  ShowPostTags = false
+  ShowTags = false
+  ShowCategories = false
+
+  # This is the Caleb-style homepage
+  [params.homeInfoParams]
+    Title = "Ameer Assadi"
+    Content = "nothing but vulns"
+    imageUrl = "profile.jpg"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/ameerassadi"
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/ameerassadi"
+
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://x.com/ameerassadi"
+

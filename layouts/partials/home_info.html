@@ -1,0 +1,17 @@
+{{- with site.Params.homeInfoParams }}
+<article class="first-entry home-info">
+  <div class="home-left">
+    {{- with .imageUrl }}
+    <img src="{{ . | absURL }}" alt="avatar" class="home-avatar" />
+    {{- end }}
+<!--     <header class="entry-header">
+      <h1>{{ .Title | markdownify }}</h1>
+    </header> -->
+    <section class="entry-content">
+      <p>{{ .Content | markdownify }}</p>
+    </section>
+    {{- partial "social_icons.html" (dict "social" site.Params.socialIcons "align" "left") -}}
+  </div>
+</article>
+{{- end }}
+
