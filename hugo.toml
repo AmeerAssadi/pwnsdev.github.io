@@ -12,7 +12,7 @@ theme = "PaperMod"
   ShowPostNavLinks = true
   ShowCodeCopyButtons = true
   ShowWordCount = false
-  ShowToc = true
+  ShowToc = false
   comments = false
   hideFooter = true
   hideCredits = true
@@ -20,6 +20,7 @@ theme = "PaperMod"
   ShowPostTags = false
   ShowTags = false
   ShowCategories = false
+
 
   # This is the Caleb-style homepage
   [params.homeInfoParams]
@@ -38,4 +39,3 @@ theme = "PaperMod"
   [[params.socialIcons]]
     name = "twitter"
     url = "https://x.com/ameerassadi"
-

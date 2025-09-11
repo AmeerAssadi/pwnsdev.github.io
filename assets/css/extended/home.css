@@ -11,3 +11,22 @@
   text-align: left;     /* ensure all text + image align left */
 }
 
+/* Serif font only for body text, not headings */
+.post-content p,
+.post-content li,
+.post-content blockquote {
+  font-family: "Georgia", "Times New Roman", serif;
+  font-size: 1.00rem;
+  line-height: 1.5;
+  color: #111;
+}
+
+/* Keep headings sans-serif */
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+  font-family: inherit; /* uses the theme default (sans-serif) */
+}

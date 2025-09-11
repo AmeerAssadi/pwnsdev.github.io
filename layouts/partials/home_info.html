@@ -1,12 +1,10 @@
+{{- $sections := site.Params.mainSections | default (slice "posts") -}}
 {{- with site.Params.homeInfoParams }}
 <article class="first-entry home-info">
   <div class="home-left">
     {{- with .imageUrl }}
     <img src="{{ . | absURL }}" alt="avatar" class="home-avatar" />
     {{- end }}
-<!--     <header class="entry-header">
-      <h1>{{ .Title | markdownify }}</h1>
-    </header> -->
     <section class="entry-content">
       <p>{{ .Content | markdownify }}</p>
     </section>
@@ -15,3 +13,22 @@
 </article>
 {{- end }}
 
+<!-- {{- $pages := where site.RegularPages "Section" "in" $sections -}}
+{{- if eq (len $pages) 0 -}}
+  <p class="muted">No posts found (check: content/posts/, draft=false, not future).</p>
+{{- end -}}
+
+{{- range $pages.ByDate.Reverse }}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+    </header>
+    {{- with .Summary }}
+    <section class="entry-content"><p>{{ . }}</p></section>
+    {{- end }}
+    <footer class="entry-footer">
+      <time datetime="{{ .Date }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+    </footer>
+  </article>
+{{- end }}
+ -->
